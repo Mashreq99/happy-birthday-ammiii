@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy 19th Birthday Amina Husna</title>
+
+<style>
+html{
+scroll-behavior:smooth;
+}
+
+body{
+margin:0;
+font-family:-apple-system, BlinkMacSystemFont, sans-serif;
+background:linear-gradient(180deg,#0b001c,#020010);
+color:white;
+text-align:center;
+}
+
+/* Each Screen */
+section{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+
+/* Glass Card */
+.card{
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(18px);
+padding:30px;
+border-radius:20px;
+max-width:420px;
+box-shadow:0 0 40px rgba(255,0,150,.3);
+animation:fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn{
+from{opacity:0; transform:translateY(40px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+h1{
+font-size:32px;
+margin-bottom:10px;
+}
+
+p{
+opacity:.8;
+line-height:1.6;
+}
+
+a.button{
+display:inline-block;
+margin-top:25px;
+padding:14px 28px;
+border-radius:40px;
+text-decoration:none;
+color:white;
+background:linear-gradient(45deg,#ff0080,#7928ca);
+box-shadow:0 0 25px #ff0080;
+}
+
+/* Memory Photo */
+.memory{
+margin-top:20px;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 20px 60px rgba(255,0,150,.5);
+}
+
+.memory img{
+width:100%;
+display:block;
+}
+
+/* Floating Hearts */
+.heart{
+position:fixed;
+bottom:-20px;
+font-size:20px;
+animation:float 6s linear infinite;
+opacity:.6;
+}
+
+@keyframes float{
+from{transform:translateY(0);}
+to{transform:translateY(-110vh);}
+}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<section>
+<div class="card">
+<h1>Hi Amina Husna 💜</h1>
+<p>
+It's been <b>256 days</b> of togetherness…<br>
+and every single one means more to me than you know.
+</p>
+<a href="#page2" class="button">Continue</a>
+</div>
+</section>
+
+<!-- PAGE 2 -->
+<section id="page2">
+<div class="card">
+<h1>A Little Memory 📸</h1>
+
+<div class="memory">
+<img src="amina.jpg">
+</div>
+
+<p>This moment… this smile… is my favourite.</p>
+
+<a href="#page3" class="button">Next</a>
+</div>
+</section>
+
+<!-- PAGE 3 -->
+<section id="page3">
+<div class="card">
+<h1>Today Is Special ✨</h1>
+<p>
+Because today the world was gifted someone
+kind, beautiful, and unforgettable.
+</p>
+<a href="#page4" class="button">Celebrate</a>
+</div>
+</section>
+
+<!-- PAGE 4 -->
+<section id="page4">
+<div class="card">
+<h1>Happy 19th Birthday 🎂</h1>
+<p style="font-size:22px;color:#ff6ec7;">
+Happy Birthday, Ammiii ❤️
+</p>
+<p>
+May this year bring you happiness,
+laughter, and everything you dream of.
+</p>
+</div>
+</section>
+
+<!-- Floating Hearts -->
+<script>
+for(let i=0;i<25;i++){
+let h=document.createElement("div");
+h.className="heart";
+h.innerHTML="💖";
+h.style.left=Math.random()*100+"vw";
+h.style.animationDuration=(4+Math.random()*4)+"s";
+document.body.appendChild(h);
+}
+</script>
+
+</body>
+</html>
